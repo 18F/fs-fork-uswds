@@ -1,0 +1,45 @@
+$font-sans: 'Arial', 'helvetica';
+$font-sans-alt: 'Verdana';
+
+$transparent: rgba(0, 0, 0, 0);
+$black: #212121;
+$dark-grey: #656565;
+$light-grey: #cccccc;
+$white: #ffffff;
+
+$fs-blue-light: #3e94cf;
+$fs-brown: #2e1e12;
+$fs-brown-dark: #261f1b;
+$fs-green-dark: #0a531b;
+$fs-green-darker: #073d11;
+$fs-green: #076727;
+$fs-green-light: #9bdaf1;
+$fs-green-lightest: #e1f3f8;
+$fs-red: #e31c3d;
+$fs-red-dark: #cd2026;
+$fs-red-darker: #981b1e;
+$fs-red-light: #e59393;
+$fs-red-lightest: #f9dede;
+$fs-tan-dark: #e2dfd3;
+$fs-tan-darker: #d6d2c1;
+$fs-tan: #eeece5;
+
+$fs-standard-green-dark: #5f7137;
+$fs-standard-orange-light: #e0ae49;
+$fs-standard-orange-dark: #ff9900;
+
+$color-primary: $fs-brown !default;
+$color-primary-darker: $fs-brown-dark !default;
+$color-primary-darkest: $black !default;
+
+$color-primary-alt: $fs-green !default;
+$color-primary-alt-dark: $fs-green-dark !default;
+$color-primary-alt-darkest: $fs-green-darker !default;
+$color-primary-alt-light: $fs-green-light !default;
+$color-primary-alt-lightest: $fs-green-lightest !default;
+
+$color-secondary: $fs-red !default;
+$color-secondary-dark: $fs-red-dark !default;
+$color-secondary-darkest: $fs-red-darker !default;
+$color-secondary-light: $fs-red-light !default;
+$color-secondary-lightest: $fs-red-lightest !default;
