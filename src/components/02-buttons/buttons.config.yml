@@ -19,6 +19,12 @@ variants:
       category: secondary-inverse
       label: Secondary inverse buttons
       classes: 'usa-button-secondary-inverse'
+  
+  - name: outline-inverse
+    context:
+      category: outline-inverse
+      label: Outlined buttons
+      classes: 'usa-button-outline-inverse'
 
   - name: aqua
     context:
