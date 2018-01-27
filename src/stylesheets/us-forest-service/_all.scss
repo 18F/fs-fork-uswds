@@ -5,6 +5,7 @@
 @import 'core/mixins';
 // Elements -------------- //
 // Styles basic HTML elements
+@import 'elements/accordion';
 @import 'elements/alerts';
 @import 'elements/backgrounds';
 @import 'elements/borders';
@@ -24,4 +25,6 @@
 @import 'components/header';
 @import 'components/primary-nav';
 @import 'components/progress';
+@import 'components/secondary-nav';
+@import 'components/usa-banner';
 @import 'components/usa-grid';
