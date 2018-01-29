@@ -5,6 +5,26 @@
     @media (min-width: $nav-width) {
       margin-top: 0;
     }
+    &.usa-accordion {
+      li {
+        button {
+          &[aria-expanded='true'] span {
+            @media (min-width: $nav-width) {
+              color: $white;
+            }
+          }
+        }
+        .usa-nav-submenu {
+          li {
+            a {
+              @media (min-width: $nav-width) {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
     li {
       border-top: none;
       a,
@@ -14,13 +34,6 @@
         font-size: 18px;
         @media (min-width: $nav-width) {
           font-size: 16px;
-        }
-        &:hover {
-          background-color: transparent;
-          @media (min-width: $nav-width) {
-            color: $white;
-            background-color: $fs-green-darker;
-          }
         }
       }
       .usa-nav-link {
@@ -33,14 +46,15 @@
       }
       button {
         &[aria-expanded='false'] {
-          background-image: url(#{$image-path}/us-forest-service/plus-white.svg) !important;
+          background-image: url(#{$image-path}/us-forest-service/plus-green.svg);
           @media (min-width: $nav-width) {
-            background-image: url(#{$image-path}/angle-arrow-down-hover.svg) !important;
+            background-image: url(#{$image-path}/us-forest-service/angle-arrow-down-green.svg);
           }
         }
         &[aria-expanded='true'] {
-          background-image: url(#{$image-path}/us-forest-service/minus-white.svg) !important;
+          background-image: url(#{$image-path}/us-forest-service/minus-green.svg);
           @media (min-width: $nav-width) {
+            background-image: url(#{$image-path}/us-forest-service/angle-arrow-down-primary-white.svg);
             color: $white;
             background-color: $fs-green-darker;
           }
@@ -60,6 +74,24 @@
           button {
             font-size: 14px;
             font-weight: normal;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      &:hover {
+        @media (min-width: $nav-width) {
+          background-color: $fs-green-darker;
+          span,
+          a {
+            color: $white;
+          }
+        }
+        button {
+          background-color: transparent;
+          @media (min-width: $nav-width) {
+            background-image: url(#{$image-path}/us-forest-service/angle-arrow-down-primary-white.svg) !important;
           }
         }
       }

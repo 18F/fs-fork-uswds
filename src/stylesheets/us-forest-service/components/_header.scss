@@ -1,6 +1,9 @@
 .usa-header {
   background: $fs-tan !important;
   .usa-logo {
+    @media (min-width: $nav-width) {
+      margin-top: 3rem;
+    }
     .fs-branding {
       @media (max-width: $nav-width) {
         padding: 18px 0;
