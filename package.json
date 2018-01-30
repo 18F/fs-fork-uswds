@@ -16,6 +16,7 @@
     "federalist": "npm install --only=dev && gulp build && fractal build",
     "mocha": "mocha --opts spec/mocha.opts",
     "prepublish": "gulp build release",
+    "prepare": "gulp build release",
     "preversion": "npm test",
     "release": "gulp release",
     "spec": "npm run mocha -- 'spec/**/*.spec.js'",

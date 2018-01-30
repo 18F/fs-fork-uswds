@@ -21,7 +21,8 @@
 .usa-sidenav-list {
   display: none;
   margin-right: 14px;
-  position: absolute;
+  border-bottom: none;
+  border-top: none;
   &.usa-accordion {
     display: block;
     margin-right: 0;

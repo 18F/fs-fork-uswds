@@ -1,0 +1,25 @@
+main,
+#main-content,
+.main-content {
+  .usa-accordion,
+  .usa-accordion-bordered {
+    .usa-accordion-content {
+      border-bottom: 1px solid $black;
+      border-left: 1px solid $black;
+      border-right: 1px solid $black;
+    }
+
+    button.usa-accordion-button {
+      background-color: $fs-tan-dark;
+      &:hover {
+        background-color: $fs-tan-darker;
+        border: 1px solid $black;
+      }
+      border: 1px solid $black;
+    }
+  }
+
+  .accordion-container {
+    margin-top: 2rem;
+  }
+}

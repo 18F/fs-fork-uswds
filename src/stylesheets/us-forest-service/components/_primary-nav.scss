@@ -2,46 +2,60 @@
   background-color: $fs-tan;
   .usa-nav-primary {
     margin-top: 1.5em;
-    @media(min-width: $nav-width) {
+    @media (min-width: $nav-width) {
       margin-top: 0;
+    }
+    &.usa-accordion {
+      li {
+        button {
+          &[aria-expanded='true'] span {
+            @media (min-width: $nav-width) {
+              color: $white;
+            }
+          }
+        }
+        .usa-nav-submenu {
+          li {
+            a {
+              @media (min-width: $nav-width) {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
     }
     li {
       border-top: none;
       a,
       span,
       button {
-        color: $white;
+        color: $fs-green;
         font-size: 18px;
-        @media(min-width: $nav-width) {
+        @media (min-width: $nav-width) {
           font-size: 16px;
-        }
-        &:hover {
-          background-color: transparent;
-          @media(min-width: $nav-width) {
-            background-color: $fs-green-darker;
-          }
         }
       }
       .usa-nav-link {
         &:hover {
-          span, a {
+          span,
+          a {
             border-bottom: none;
           }
         }
       }
       button {
-        &[aria-expanded=false]{
-          background-image: url(/img/plus-white.png) !important;
-          background-image: url(/img/plus-white.svg) !important;
-          @media(min-width: $nav-width) {
-            background-image: url(/img/angle-arrow-down-hover.png) !important;
-            background-image: url(/img/angle-arrow-down-hover.svg) !important;
+        &[aria-expanded='false'] {
+          background-image: url(#{$image-path}/us-forest-service/plus-green.svg);
+          @media (min-width: $nav-width) {
+            background-image: url(#{$image-path}/us-forest-service/angle-arrow-down-green.svg);
           }
         }
-        &[aria-expanded=true]{
-          background-image: url(/img/minus-white.png) !important;
-          background-image: url(/img/minus-white.svg) !important;
-          @media(min-width: $nav-width) {
+        &[aria-expanded='true'] {
+          background-image: url(#{$image-path}/us-forest-service/minus-green.svg);
+          @media (min-width: $nav-width) {
+            background-image: url(#{$image-path}/us-forest-service/angle-arrow-down-primary-white.svg);
+            color: $white;
             background-color: $fs-green-darker;
           }
           span {
@@ -50,8 +64,9 @@
         }
       }
       ul.usa-nav-submenu {
-        @media(min-width: $nav-width) {
+        @media (min-width: $nav-width) {
           background-color: $fs-green-darker;
+          color: $white;
         }
         li {
           a,
@@ -59,6 +74,24 @@
           button {
             font-size: 14px;
             font-weight: normal;
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      &:hover {
+        @media (min-width: $nav-width) {
+          background-color: $fs-green-darker;
+          span,
+          a {
+            color: $white;
+          }
+        }
+        button {
+          background-color: transparent;
+          @media (min-width: $nav-width) {
+            background-image: url(#{$image-path}/us-forest-service/angle-arrow-down-primary-white.svg) !important;
           }
         }
       }
