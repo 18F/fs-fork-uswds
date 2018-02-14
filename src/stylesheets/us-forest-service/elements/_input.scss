@@ -132,3 +132,25 @@ input.ng-touched.invaliddate,
 input[disabled] {
   background-color: $light-grey;
 }
+
+input,
+textarea,
+select {
+  appearance: none;
+  border: $input-border-width solid $color-gray;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: $color-base; // standardize on firefox
+  display: block;
+  font-size: $base-font-size;
+  height: $input-height;
+  line-height: $input-line-height;
+  margin: 0.2em 0;
+  max-width: $input-max-width;
+  padding: $input-padding-vertical 0.7em;
+  width: 100%;
+
+  &.usa-input-success {
+    border: 3px solid $fs-green;
+  }
+}

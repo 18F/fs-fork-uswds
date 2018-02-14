@@ -1,7 +1,22 @@
 main,
 #main-content,
 .main-content {
-  .usa-accordion,
+  .usa-accordion {
+    li {
+      background: transparent;
+    }
+    button.usa-accordion-button {
+      background-color: $fs-tan-dark;
+      &:hover {
+        background-color: $fs-tan-darker;
+        border: 1px solid $black;
+      }
+      border: 1px solid $black;
+    }
+    .usa-accordion-content {
+      background-color: transparent;
+    }
+  }
   .usa-accordion-bordered {
     .usa-accordion-content {
       border-bottom: 1px solid $black;

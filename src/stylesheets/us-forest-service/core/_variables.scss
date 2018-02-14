@@ -1,6 +1,3 @@
-$font-sans: 'Arial', 'helvetica';
-$font-sans-alt: 'Verdana';
-
 $transparent: rgba(0, 0, 0, 0);
 $black: #212121;
 $dark-grey: #656565;
@@ -33,6 +30,7 @@ $color-primary-darker: $fs-brown-dark !default;
 $color-primary-darkest: $black !default;
 
 $color-primary-alt: $fs-green !default;
+$color-primary-alt: $color-aqua !default;
 $color-primary-alt-dark: $fs-green-dark !default;
 $color-primary-alt-darkest: $fs-green-darker !default;
 $color-primary-alt-light: $fs-green-light !default;
