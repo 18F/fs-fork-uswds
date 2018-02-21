@@ -1,0 +1,105 @@
+.usa-header {
+  background: $fs-tan !important;
+  .usa-logo {
+    @media (min-width: $nav-width) {
+      margin-top: 3rem;
+    }
+    .fs-branding {
+      @media (max-width: $nav-width) {
+        padding: 18px 0;
+      }
+      #us-forest-service-logo {
+        float: left;
+        img.fs-logo {
+          float: left;
+          margin: -6px 0 0 0;
+          position: relative;
+          z-index: 10;
+          width: 50px;
+          @media (min-width: $nav-width) {
+            margin-bottom: 20px;
+            width: 100px;
+          }
+        }
+      }
+      img.usda-logo {
+        float: left;
+        margin: -6px 5px 0 0;
+        position: relative;
+        z-index: 10;
+        width: 50px;
+        @media (min-width: $nav-width) {
+          margin: -16px 10px 20px 0;
+          width: 120px;
+        }
+      }
+      .fs-name-slogan {
+        float: left;
+        .fs-name {
+          float: left;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 17px;
+          margin-left: 10px;
+          margin-top: 6px;
+          @media (min-width: $nav-width) {
+            font-size: 24px;
+            line-height: 26px;
+            margin-top: 17px;
+          }
+        }
+        .fs-slogan {
+          clear: both;
+          float: left;
+          font-size: 10px;
+          line-height: 15px;
+          margin-left: 10px;
+          @media (min-width: $nav-width) {
+            font-size: 20px;
+            line-height: 22px;
+          }
+        }
+        .beta-label {
+          float: left;
+          line-height: 30px;
+          margin-left: 10px;
+          margin-top: -16px;
+          @media (min-width: $nav-width) {
+            clear: both;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .usa-navbar {
+    @media (max-width: $nav-width - 1) {
+      height: 100px;
+    }
+    @media (max-width: $medium-screen) {
+      height: 120px;
+    }
+    .authentication {
+      float: left;
+      clear: both;
+      margin-left: 1em;
+      @media (min-width: $medium-screen) {
+        float: right;
+        margin-left: 18px;
+        margin-top: -10px;
+        clear: none;
+        .user-link {
+          text-align: right;
+        }
+      }
+      @media (min-width: $nav-width + 1) {
+        float: right;
+        margin-top: 27px;
+        clear: none;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
