@@ -118,18 +118,6 @@ footer.usa-footer {
     }
   }
 
-  // .usa-link-twitter {
-  //   background-image: none;
-  // }
-  //
-  // .usa-link-facebook {
-  //   background-image: none;
-  // }
-  //
-  // .usa-link-youtube {
-  //   background-image: none;
-  // }
-
   .build-version {
     color: $white;
     text-align: center;
@@ -169,16 +157,19 @@ footer.usa-footer {
   text-align: center;
   width: 100%;
   z-index: 1000;
+  span {
+    padding: 2rem;
+  }
   @media (max-width: $medium-screen) {
     padding-left: 1em;
     padding-right: 1em;
   }
-  button {
-    @media (min-width: $medium-screen) {
-      margin-left: 2em;  
-    }
-  }
   &.fixed {
     position: fixed;
   }
+}
+
+.fs-footer-sticky-label {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
 }
