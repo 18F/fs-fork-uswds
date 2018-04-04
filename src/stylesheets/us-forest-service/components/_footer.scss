@@ -118,18 +118,6 @@ footer.usa-footer {
     }
   }
 
-  // .usa-link-twitter {
-  //   background-image: none;
-  // }
-  //
-  // .usa-link-facebook {
-  //   background-image: none;
-  // }
-  //
-  // .usa-link-youtube {
-  //   background-image: none;
-  // }
-
   .build-version {
     color: $white;
     text-align: center;
@@ -159,4 +147,30 @@ footer.usa-footer {
 .usa-link-rss {
   @extend .usa-social_link;
   background-image: url('#{$image-path}/us-forest-service/social-icons/rss.svg');
+}
+
+.fs-footer-sticky {
+  background: white;
+  bottom: 0;
+  box-shadow: 0px -10px 20px $dark-grey;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  span {
+    padding: 2rem;
+  }
+  @media (max-width: $medium-screen) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  &.fixed {
+    position: fixed;
+  }
+}
+
+.fs-footer-sticky-label {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
 }
