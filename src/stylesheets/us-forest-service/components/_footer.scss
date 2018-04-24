@@ -1,0 +1,176 @@
+footer.usa-footer {
+  .usa-footer-primary-link {
+    color: $white;
+  }
+
+  .usa-footer-primary-section {
+    background: $fs-green;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 20px 0 !important;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span,
+    a {
+      color: $white;
+    }
+  }
+
+  .fs-footer-links {
+    padding: 0 0 15px 0;
+  }
+
+  .fs-footer-item {
+    display: inline-block;
+    padding: 5px 25px 0px 5px;
+    width: 49%;
+    vertical-align: top;
+    line-height: 15px;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (min-width: $large-screen) {
+      width: 24%;
+    }
+  }
+
+  .fs-footer-logo {
+    height: 60px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+  }
+
+  .usa-footer-logo-heading {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    .fs-name-slogan {
+      float: left;
+      .fs-name {
+        color: $white;
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 17px;
+        margin-left: 4px;
+      }
+      .fs-slogan {
+        clear: both;
+        color: $white;
+        float: left;
+        font-size: 12px;
+        line-height: 15px;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .usa-footer-secondary_section {
+    background-color: $fs-brown !important;
+    padding: 20px 0;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    span,
+    a {
+      color: $white;
+    }
+    @media (max-width: $medium-screen) {
+      text-align: center;
+      a {
+        margin: 0 3px !important;
+        vertical-align: middle;
+      }
+      h2,
+      h3 {
+        text-align: left;
+      }
+    }
+  }
+
+  .footer-contact-links {
+    a {
+      color: $white;
+    }
+  }
+
+  .usa-footer-contact-links {
+    position: relative;
+    top: 7px;
+    a {
+      color: $white;
+      img {
+        width: 30px;
+      }
+    }
+  }
+
+  .build-version {
+    color: $white;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .footer-section-bottom {
+    background: $fs-brown;
+  }
+}
+
+.usa-link-facebook {
+  @extend .usa-social_link;
+  background-image: url('#{$image-path}/us-forest-service/social-icons/facebook.svg');
+}
+
+.usa-link-twitter {
+  @extend .usa-social_link;
+  background-image: url('#{$image-path}/us-forest-service/social-icons/twitter.svg');
+}
+
+.usa-link-youtube {
+  @extend .usa-social_link;
+  background-image: url('#{$image-path}/us-forest-service/social-icons/youtube.svg');
+}
+
+.usa-link-rss {
+  @extend .usa-social_link;
+  background-image: url('#{$image-path}/us-forest-service/social-icons/rss.svg');
+}
+
+.fs-footer-sticky {
+  background: white;
+  bottom: 0;
+  box-shadow: 0px -10px 20px $dark-grey;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 1000;
+  span {
+    padding: 2rem;
+  }
+  @media (max-width: $medium-screen) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  &.fixed {
+    position: fixed;
+  }
+}
+
+.fs-footer-sticky-label {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+}

@@ -1,0 +1,165 @@
+.usa-menu-btn {
+  background: $fs-green;
+  &:hover {
+    background: $fs-green-darker;
+  }
+}
+
+.forest-service {
+  .usa-button, .usa-button-primary {
+    background-color: $fs-brown;
+    color: $white;
+    box-shadow: none;
+    &:hover, &.usa-button-hover {
+      color: $white;
+      background-color: $fs-brown-dark;
+    }
+    &:active, &.usa-button-active {
+      color: $white;
+      background-color: $black;
+    }
+  }
+
+  .usa-button-primary-alt {
+    background-color: $fs-green;
+    color: $white;
+    box-shadow: none;
+    &:hover, &.usa-button-hover {
+      color: $white;
+      background-color: $fs-green-dark;
+    }
+    &:active, &.usa-button-active {
+      color: $white;
+      background-color: $fs-green-darker;
+    }
+  }
+
+  .usa-button.usa-button-secondary, .usa-button-secondary {
+    background-color: $fs-tan;
+    color: $black !important;
+    box-shadow: none !important;
+    border: solid 1px $black;
+    &:hover,
+    &:hover:visited,
+    &.usa-button-hover {
+      box-shadow: none !important;
+      background-color: $fs-tan-dark;
+      color: $black;
+      border: solid 1px $black;
+    }
+    &:active,
+    &:active:visited,
+    &:focus,
+    &.usa-button-active {
+      box-shadow: none !important;
+      background-color: $fs-tan-darker;
+      border: solid 1px $black;
+    }
+  }
+
+
+  .usa-button-outline, .usa-button-secondary-alt {
+    background-color: $transparent;
+    box-shadow: inset 0 0 0 2px $fs-green;
+    color: $fs-green;
+    &:hover,
+    &:hover:visited,
+    &.usa-button-hover {
+      background-color: $transparent;
+      box-shadow: inset 0 0 0 2px $fs-green-dark;
+      color: $fs-green-dark;
+    }
+    &:active,
+    &:focus,
+    &.usa-button-active {
+      background-color: $transparent;
+      box-shadow: inset 0 0 0 2px $fs-green-darker !important;
+      color: $fs-green-darker;
+    }
+    &:visited {
+      background-color: $transparent;
+      box-shadow: inset 0 0 0 2px $fs-green;
+      color: $fs-green;
+    }
+  }
+
+  .usa-button-grey {
+    background-color: $dark-grey;
+    color: $white;
+    &:hover, &.usa-button-hover {
+      background-color: $black;
+    }
+    &:active, &.usa-button-active {
+      background-color: $black;
+    }
+  }
+
+  .usa-button-inverse {
+    background-color: $fs-tan;
+    color: $black;
+    border: solid 1px $black;
+    &:hover,
+    &:hover:visited,
+    &.usa-button-hover {
+      background-color: $fs-tan-dark;
+      color: $black;
+    }
+    &:active,
+    &:active:visited,
+    &.usa-button-active {
+      background-color: $fs-tan-darker;
+    }
+  }
+
+
+  .usa-button-red {
+    background-color: $fs-red;
+    color: $white;
+    box-shadow: none;
+    &:hover, &.usa-button-hover {
+      background-color: $fs-red-dark;
+      color: $white;
+      box-shadow: none;
+    }
+    &:active, &.usa-button-active {
+      background-color: $fs-red-darker;
+      color: $white;
+      box-shadow: none;
+    }
+  }
+
+}
+
+.button-hint {
+  display: block;
+  margin-top: 4px;
+}
+
+.login-gov {
+  margin-bottom: -2px;
+  width: 100px;
+}
+
+.usa-button-border {
+  border: solid 1px $dark-grey;
+  &:hover {
+    border-bottom: solid 1px $dark-grey;
+  }
+}
+
+.sub-button {
+  display: block;
+  font-size: smaller;
+}
+
+.save-button {
+  display: inline-block !important;
+}
+
+.pay-gov-logo {
+  height: 30px;
+  margin-bottom: -10px;
+  background: white;
+  border-radius: 4px;
+  padding: 0 4px;
+}

@@ -1,0 +1,20 @@
+.forest-service {
+  .site-nav-secondary {
+    a {
+      color: $fs-green;
+      &:hover, &.usa-current {
+        span {
+          color: $fs-green;
+          border-color: $fs-green;
+        }
+      }
+    }
+    @media screen and (min-width: $nav-width) {
+      background-color: $fs-tan !important;
+    }
+  }
+
+  .usa-nav .usa-current {
+    border-left: none;
+  }
+}

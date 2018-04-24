@@ -1,0 +1,23 @@
+.white-background {
+  background-color: $white;
+}
+
+.padded-background {
+  padding: 0 2em;
+}
+
+.dark-bg {
+  background-color: $fs-brown !important;
+}
+
+.usa-section-dark {
+  background-color: $fs-brown !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $fs-tan;
+  }
+}
